@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourGoatViper | Official Links</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* ===== Base Style ===== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc, #6a11cb);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ===== Logo ===== */
+    .logo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.4);
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255,255,255,0.25);
+      transition: all 0.4s ease;
+      animation: glowPulse 4s infinite ease-in-out;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(255,255,255,0.25); }
+      50% { box-shadow: 0 0 40px rgba(255,255,255,0.45); }
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo:hover {
+      transform: scale(1.08);
+    }
+
+    /* ===== Card ===== */
+    .card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(25px);
+      border-radius: 25px;
+      padding: 35px 25px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    h1 {
+      margin: 10px 0 8px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    p.subtitle {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+      margin: 15px 0;
+    }
+
+    /* ===== Buttons ===== */
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 14px;
+      padding: 14px 20px;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Brand Hover Colors */
+    .tiktok:hover { background: #ff0050; }
+    .youtube:hover { background: #ff0000; }
+    .instagram:hover { background: #E1306C; }
+    .whatsapp:hover { background: #25D366; }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="logo.png" alt="YourGoatViper Logo">
+  </div>
+
+  <!-- Main Card -->
+  <div class="card">
+    <h1>YourGoatViper</h1>
+    <p class="subtitle">Creator — Connect with me</p>
+    <hr>
+
+    <a href="https://www.tiktok.com/@yourgoatviper?_t=ZS-90S15LBVKrM&_r=1" target="_blank" class="link-btn tiktok">
+      <span><i class="fab fa-tiktok"></i> TikTok</span>
+      <span>@yourgoatviper</span>
+    </a>
+
+    <a href="https://www.youtube.com/@YourGoatViper" target="_blank" class="link-btn youtube">
+      <span><i class="fab fa-youtube"></i> YouTube</span>
+      <span>@YourGoatViper</span>
+    </a>
+
+    <a href="https://www.instagram.com/arham_arain333?igsh=NGhobDk1c29rd3oy&utm_source=qr" target="_blank" class="link-btn instagram">
+      <span><i class="fab fa-instagram"></i> Instagram</span>
+      <span>@arham_arain333</span>
+    </a>
+
+    <a href="https://wa.me/923348666640" target="_blank" class="link-btn whatsapp">
+      <span><i class="fab fa-whatsapp"></i> WhatsApp</span>
+      <span>Message me</span>
+    </a>
+
+    <p class="footer">Clean • Professional • Built for creators 🚀</p>
+  </div>
+
+</body>
+</html>
